@@ -8,17 +8,18 @@ function App() {
         <header class="header-banner">
             <div class="container-width">
                 <div class="logo-container">
-                    <div class="logo">GrapesJS</div>
+                    <div class="logo">Conference Room</div>
                 </div>
                 <nav class="menu">
-                    <div class="menu-item">BUILDER</div>
-                    <div class="menu-item">TEMPLATE</div>
-                    <div class="menu-item">WEB</div>
+                    <div class="menu-item">Login</div>
+                    <div class="menu-item">Impressum</div>
+                    <div class="menu-item">About Us</div>
                 </nav>
                 <div class="clearfix"></div>
                 <div class="lead-title">Elevate your standards</div>
-                <div class="sub-lead-title">All text blocks could be edited easily with double clicking on it. You can create new text blocks with the command from the left panel</div>
-                <div class="lead-btn">Hover me</div>
+                <div class="sub-lead-title">With modern equipment and best accomodation,<br/>
+                we put your audience and yourself in the best evironment.</div>
+                <div class="lead-btn">Learn more</div>
             </div>
         </header>
         <section class="flex-sect">
