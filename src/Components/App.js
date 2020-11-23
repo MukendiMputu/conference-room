@@ -2,84 +2,16 @@ import React from 'react';
 import '../css/App.css';
 import HeaderNavBar from './HeaderNavBar';
 import Footer from './Footer';
+import MainHeader from './MainHeader';
+import RoomList from './RoomList';
 
 function App() {
   return (
       <div>
       <HeaderNavBar/>
-        <header className="header-banner">
-            <div className="container-width">
-                <div className="logo-container">
-                    <div className="logo">Conference Room</div>
-                </div>
-                <nav className="menu">
-                    <div className="menu-item">Login</div>
-                    <div className="menu-item">Impressum</div>
-                    <div className="menu-item">About Us</div>
-                </nav>
-                <div className="clearfix"></div>
-                <div className="lead-title">Elevate your standards</div>
-                <div className="sub-lead-title">With modern equipment and best accomodation,<br/>
-                we put your audience and yourself in the best evironment.</div>
-                <div className="lead-btn">Learn more</div>
-            </div>
-        </header>
-        
+      <MainHeader/>
         <section className="flex-sect">
-            <div className="container-width">
-                <div className="flex-title">Flex is the new black</div>
-                <div className="flex-desc">With flexbox system you're able to build complex layouts easily and with free responsivity</div>
-                <div className="cards">
-                    <div className="card">
-                        <div className="card-header"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title one</div>
-                            <div className="card-sub-title">Subtitle one</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-header ch2"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title two</div>
-                            <div className="card-sub-title">Subtitle two</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-header ch3"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title three</div>
-                            <div className="card-sub-title">Subtitle three</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-header ch4"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title four</div>
-                            <div className="card-sub-title">Subtitle four</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-header ch5"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title five</div>
-                            <div className="card-sub-title">Subtitle five</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-header ch6"></div>
-                        <div className="card-body">
-                            <div className="card-title">Title six</div>
-                            <div className="card-sub-title">Subtitle six</div>
-                            <div className="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <RoomList />
         </section>
 
         <section className="am-sect">

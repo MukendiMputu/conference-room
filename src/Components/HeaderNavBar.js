@@ -2,8 +2,7 @@ import React from 'react';
 
 function HeaderNavBar() {
 
-    return (
-        <>
+    return (       
         <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
             {/* eslint-disable-next-line  */}
             <a className="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Conference Room</a>
@@ -19,7 +18,6 @@ function HeaderNavBar() {
                 </li>
             </ul>
         </nav> 
-        </>
     );
 }
 
