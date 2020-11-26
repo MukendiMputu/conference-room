@@ -5,6 +5,7 @@ import Footer from './Footer';
 import MainHeader from './MainHeader';
 import RoomList from './RoomList';
 import Features from './Features';
+import BoardMembers from './BoardMembers';
 
 function App() {
   return (
@@ -33,38 +34,7 @@ function App() {
         </section>
 
         <section className="bdg-sect">
-            <div className="container-width">
-                <h1 className="bdg-title">The team</h1>
-                <div className="badges">
-                    <div className="badge">
-                        <div className="badge-header"></div><img alt="" src="img/team1.jpg" className="badge-avatar" />
-                        <div className="badge-body">
-                            <div className="badge-name">Adam Smith</div>
-                            <div className="badge-role">CEO</div>
-                            <div className="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>
-                        </div>
-                        <div className="badge-foot"><span className="badge-link">f</span><span className="badge-link">t</span><span className="badge-link">ln</span></div>
-                    </div>
-                    <div className="badge">
-                        <div className="badge-header"></div><img alt="" src="img/team2.jpg" className="badge-avatar" />
-                        <div className="badge-body">
-                            <div className="badge-name">John Black</div>
-                            <div className="badge-role">Software Engineer</div>
-                            <div className="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>
-                        </div>
-                        <div className="badge-foot"><span className="badge-link">f</span><span className="badge-link">t</span><span className="badge-link">ln</span></div>
-                    </div>
-                    <div className="badge">
-                        <div className="badge-header"></div><img alt="" src="img/team3.jpg" className="badge-avatar" />
-                        <div className="badge-body">
-                            <div className="badge-name">Jessica White</div>
-                            <div className="badge-role">Web Designer</div>
-                            <div className="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>
-                        </div>
-                        <div className="badge-foot"><span className="badge-link">f</span><span className="badge-link">t</span><span className="badge-link">ln</span></div>
-                    </div>
-                </div>
-            </div>
+            <BoardMembers />
         </section>
         
         <Footer /> 
