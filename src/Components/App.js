@@ -18,7 +18,8 @@ function App() {
 
         <section className="am-sect">
             <div className="container-width">
-                <div className="am-container"><img alt="" onMouseDown={()=>{ return false; }} src="./img/phone-app.png" className="img-phone" />
+                <div className="am-container">
+                    <img alt="" onMouseDown={()=>{ return false; }} src="./img/phone-app.png" className="img-phone" />
                     <div className="am-content">
                         <div className="am-pre">ASSET MANAGER</div>
                         <div className="am-title">Manage your images with Asset Manager</div>
