@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {ImCancelCircle} from "react-icons/im";
 
 
 class RoomList extends Component {
@@ -7,7 +8,6 @@ class RoomList extends Component {
         this.state = {
         };
     }
-
 
     render(){
 
@@ -24,7 +24,11 @@ class RoomList extends Component {
                 this.props.rooms.map((item) => (
                     <div key={item.roomID}>
                         <div className="card">
-                        <div className="card-header ch6"></div>
+                        <div className="card-header ch6">
+                            <span style={{color:'white', float:'right'}}>
+                                <ImCancelCircle onClick={()=>{this.props.deleteRoom(item)}}/>
+                            </span>
+                        </div>
                         <div className="card-body">
                             <div className="card-title">{item.name}</div>
                             <div className="card-sub-title">Capacity: {item.capacity}</div>

@@ -7,6 +7,8 @@ import RoomList from './RoomList';
 import Features from './Features';
 import BoardMembers from './BoardMembers';
 
+import { without } from "lodash";
+
 class App extends Component {
   constructor() {
     super();
@@ -14,6 +16,16 @@ class App extends Component {
       myrooms: [],
       lastIdx: 0,
     };
+    this.deleteRoom = this.deleteRoom.bind(this);
+  }
+
+  deleteRoom(room) {
+    let roomList = this.state.myrooms;
+    roomList = without(roomList, room);
+
+    this.setState({
+        myrooms: roomList
+    });
   }
 
   componentDidMount() {
@@ -37,7 +49,7 @@ class App extends Component {
         <HeaderNavBar />
         <MainHeader />
         <section className="flex-sect">
-          <RoomList rooms={this.state.myrooms} />
+          <RoomList rooms={this.state.myrooms} deleteRoom={this.deleteRoom}/>
         </section>
 
         <section className="am-sect">
