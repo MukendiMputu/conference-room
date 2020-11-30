@@ -5,25 +5,9 @@ class RoomList extends Component {
     constructor () {
         super();
         this.state = {
-            myrooms : [],
-            lastIdx: 0
         };
     }
 
-    componentDidMount () {
-        fetch('./rooms.json')
-        .then(response => response.json())
-        .then(result => {
-            const rooms = result.map(item => {
-                item.roomID = this.state.lastIdx;
-                this.setState({lastIdx: this.state.lastIdx + 1});
-                return item;
-            });
-            this.setState({
-                myrooms : rooms
-            });
-        });
-    }
 
     render(){
 
@@ -37,7 +21,7 @@ class RoomList extends Component {
             </div>
             <div className="cards">
               {
-                this.state.myrooms.map((item) => (
+                this.props.rooms.map((item) => (
                     <div key={item.roomID}>
                         <div className="card">
                         <div className="card-header ch6"></div>

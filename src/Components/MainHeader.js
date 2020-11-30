@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-
+import {without} from 'lodash';
 
 class MainHeader extends Component {
 
@@ -9,6 +9,10 @@ class MainHeader extends Component {
         this.state = {
             title: "Conference Room",
         }
+    }
+
+    deleteRoom(room) {
+
     }
 
     render() {
@@ -27,7 +31,7 @@ class MainHeader extends Component {
                     <div className="lead-title">Elevate your standards</div>
                     <div className="sub-lead-title">With modern equipment and best accomodation,<br/>
                     we put your audience and yourself in the best evironment.</div>
-                    <div className="lead-btn">Learn more</div>
+                    <div className="lead-btn" onClick={()=>{this.props.deleteRoom()}}>Learn more</div>
                 </div>
             </header>
         
