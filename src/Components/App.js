@@ -60,7 +60,8 @@ class App extends Component {
                 onMouseDown={() => {
                   return false;
                 }}
-                src="./img/phone-app.png"
+
+                src="../img/phone-app.png"
                 className="img-phone"
               />
               <div className="am-content">
